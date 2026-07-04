@@ -42,13 +42,28 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 10px;
-      padding: 15px;
+      gap: 15px;
+      padding: 20px;
       border: 1px solid rgba(128, 128, 128, 0.3);
       border-radius: 8px;
       background-color: rgba(128, 128, 128, 0.05);
+      box-sizing: border-box;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0076ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background-color: #0056b3;
     }
     iframe {
+      width: 100%;
       max-width: 100%;
       border-radius: 4px;
     }
@@ -64,26 +79,20 @@
   <main class="container">
 
     <section class="card">
-      <h2>Mi Dirección</h2>
-      <iframe
-        src="https://maps.app.goo.gl/GLtN3cT8hTbFRFW8A"
-        width="100%" height="450" frameborder="0" style="border:0;"
-        allowfullscreen="" loading="lazy"></iframe>
+      <h2>Mi Ubicación</h2>
+      <p>Haz clic abajo para abrir la ubicación directamente en Google Maps:</p>
+      <a class="btn" href="https://maps.app.goo.gl/GLtN3cT8hTbFRFW8A" target="_blank">Ver Mapa</a>
     </section>
 
     <section class="card">
       <h2>Mi Facebook</h2>
-      <iframe
-        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GV3QioHFT%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
-        width="340" height="500"
-        style="border:none; overflow:hidden;"
-        scrolling="no" frameborder="0" allowTransparency="true"
-        allow="encrypted-media"></iframe>
+      <p>Visita mi perfil o contenido compartido en Facebook:</p>
+      <a class="btn" href="https://www.facebook.com/share/1GV3QioHFT/" target="_blank">Ir a Facebook</a>
     </section>
 
     <section class="card">
       <h2>Mi Video de YouTube</h2>
-      <iframe width="100%" height="315"
+      <iframe height="315"
         src="https://www.youtube.com/embed/tqOk-I7bYXs"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
