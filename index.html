@@ -28,6 +28,24 @@
     .author-tag {
       font-style: italic;
       opacity: 0.8;
+      margin-bottom: 20px;
+    }
+    .project-description {
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+      border: 1px dashed rgba(128, 128, 128, 0.4);
+      border-radius: 8px;
+      background-color: rgba(128, 128, 128, 0.02);
+      box-sizing: border-box;
+    }
+    .project-description ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    .project-description p {
+      line-height: 1.5;
+      margin-top: 15px;
     }
     .container {
       display: flex;
@@ -48,24 +66,27 @@
       border-radius: 8px;
       background-color: rgba(128, 128, 128, 0.05);
       box-sizing: border-box;
+      text-align: center;
     }
     .btn {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 24px;
       background-color: #0076ff;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
       font-weight: bold;
-      transition: background 0.2s;
+      transition: background 0.2s, transform 0.1s;
     }
     .btn:hover {
       background-color: #0056b3;
+      transform: scale(1.02);
     }
     iframe {
       width: 100%;
       max-width: 100%;
       border-radius: 4px;
+      border: none;
     }
   </style>
 </head>
@@ -74,27 +95,39 @@
   <header>
     <h1>Panel Integrado</h1>
     <p class="author-tag">Por: Matías Aguilar Julio César</p>
+    
+    <div class="project-description">
+      <ul>
+        <li>Estructura</li>
+        <li>Enlaces</li>
+        <li>Google</li>
+        <li>PAGINA PARA MI PROYECTO 🧳</li>
+        <li>Bienvenidos al smalayn</li>
+        <li>nueve de lemon</li>
+      </ul>
+      <p>"Este proyecto web fue desarrollado como trabajo final para mi evaluación académica. Aunque cuenta con un diseño sencillo, incorpora funcionalidades como mapas interactivos, videos de YouTube y acceso a una página de Facebook."</p>
+    </div>
   </header>
 
   <main class="container">
 
     <section class="card">
       <h2>Mi Ubicación</h2>
-      <p>Haz clic abajo para abrir la ubicación directamente en Google Maps:</p>
-      <a class="btn" href="https://maps.app.goo.gl/GLtN3cT8hTbFRFW8A" target="_blank">Ver Mapa</a>
+      <p>Explora la ubicación directamente en la plataforma oficial de mapas:</p>
+      <a class="btn" href="https://maps.app.goo.gl/GLtN3cT8hTbFRFW8A" target="_blank">📍 Abrir Google Maps</a>
     </section>
 
     <section class="card">
       <h2>Mi Facebook</h2>
-      <p>Visita mi perfil o contenido compartido en Facebook:</p>
-      <a class="btn" href="https://www.facebook.com/share/1GV3QioHFT/" target="_blank">Ir a Facebook</a>
+      <p>Visita mi perfil o contenido compartido en la plataforma:</p>
+      <a class="btn" href="https://www.facebook.com/share/1GV3QioHFT/" target="_blank">🌐 Ir a mi Perfil</a>
     </section>
 
     <section class="card">
       <h2>Mi Video de YouTube</h2>
       <iframe height="315"
         src="https://www.youtube.com/embed/tqOk-I7bYXs"
-        title="YouTube video player" frameborder="0"
+        title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
